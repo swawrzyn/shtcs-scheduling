@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
 
     <head>
 
@@ -7,9 +7,12 @@
 
     </head>
     <body>   
+        {% include 'includes/nav.html' %}
 
-        {{ content | safe }} 
-        
+        <div class="content" style="width: 100vw; height: calc(100vh - 65px);">
+            {{ content | safe }}
+        </div>
+
         {% include 'includes/footer.html' %}
 
         {% include 'includes/scripts.html' %}
