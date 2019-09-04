@@ -16,11 +16,11 @@ RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r /requirements.txt
 
 # RUN apk del .tmp-build-deps
 
-RUN mkdir /app
+RUN mkdir /web
 
-WORKDIR /app
+WORKDIR /web
 
-COPY . /app
+COPY . /web
 
 RUN adduser -D user
 USER user

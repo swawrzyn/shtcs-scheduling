@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        {% include 'includes/header.html' %}
+
+    </head>
+    <body>   
+
+        {{ content | safe }} 
+        
+        {% include 'includes/footer.html' %}
+
+        {% include 'includes/scripts.html' %}
+
+    </body>
+
+</html>
