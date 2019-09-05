@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
-
-    <head>
-
-        {% include 'includes/header.html' %}
-
-    </head>
-    <body>   
-        {% include 'includes/nav.html' %}
-
-        <div class="content" style="width: 100vw; height: calc(100vh - 65px);">
-            {{ content | safe }}
-        </div>
-
-        {% include 'includes/footer.html' %}
-
-        {% include 'includes/scripts.html' %}
-
-    </body>
-
+<html lang="en" style="margin: 0; padding: 0;">
+<head>
+  {% include 'includes/header.html' %}
+</head>
+<body>
+  {% include 'includes/nav.html' %}
+  <div class="content" style="width: 100vw; min-height: calc(100vh - 80px);">
+      {{ content | safe }}
+  </div>
+  {% include 'includes/footer.html' %}
+  {% include 'includes/scripts.html' %}
+</body>
 </html>
